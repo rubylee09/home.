@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bookcase</title>
+  <link rel="stylesheet" href="../stylesheet.css">
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .fullscreen-image {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 10;
+    }
+
+    .back-button img {
+      display: block;
+      width: 120px;
+      height: auto;
+    }
+
+    .back-button:hover img,
+    .back-button:focus-visible img {
+      filter:
+        drop-shadow(2px 0 0 hotpink)
+        drop-shadow(-2px 0 0 hotpink)
+        drop-shadow(0 2px 0 hotpink)
+        drop-shadow(0 -2px 0 hotpink);
+    }
+  </style>
+</head>
+
+<body>
+  <img class="fullscreen-image" src="Bookcasecloseup.jpg" alt="Close-up of the armchair">
+
+  <a class="back-button" href="../index.html">
+    <img src="../goback.png" alt="Go back to the room">
+  </a>
+</body>
+</html>

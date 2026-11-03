@@ -1,0 +1,95 @@
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+.room {
+  position: fixed;
+  width: min(100vw, 177.86vh);
+  aspect-ratio: 1366 / 768;
+  margin: 0 auto;
+  background-image: url("Netartbackground.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.item {
+  position: absolute;
+  display: block;
+}
+
+.item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bookcase {
+  left: 11.5%;
+  top: 5.5%;
+  width: 16%;
+}
+
+.pictures {
+  left: 39.5%;
+  top: 0.5%;
+  width: 19%;
+}
+
+.chair {
+  left: 23%;
+  top: 35%;
+  width: 20%;
+}
+
+.table {
+  left: 71%;
+  top: 44%;
+  width: 24%;
+}
+.item img {
+  transition: filter 0.15s ease;
+}
+
+.item:hover img,
+.item:focus-visible img {
+  filter:
+    drop-shadow(2px 0 0 yellow)
+    drop-shadow(-2px 0 0 yellow)
+    drop-shadow(0 2px 0 yellow)
+    drop-shadow(0 -2px 0 yellow);
+}
+.fire {
+  position: absolute;
+  left: 45.5%;
+  top: 39%;
+  width: 7.5%;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.back-button img {
+  display: block;
+  width: 120px;
+  height: auto;
+}
+
+.back-button:hover img,
+.back-button:focus-visible img {
+  filter:
+    drop-shadow(2px 0 0 hotpink)
+    drop-shadow(-2px 0 0 hotpink)
+    drop-shadow(0 2px 0 hotpink)
+    drop-shadow(0 -2px 0 hotpink);
+}
+* {
+  cursor: url("key.png") 0 0, auto;
+}
